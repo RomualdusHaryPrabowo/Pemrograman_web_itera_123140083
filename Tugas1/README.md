@@ -10,21 +10,21 @@ Berikut adalah beberapa tampilan dari aplikasi:
 
 **1. Tampilan Awal Aplikasi**
 *Menunjukkan halaman utama saat pertama kali dibuka.*
-![Tampilan Awal](images/Tampilan-utama.png.png)
+![Tampilan Awal](images/Tampilan-utama.png)
 
 **2. Menambahkan Tugas Baru**
 *Menunjukkan saat pengguna sedang mengetik tugas baru di form input.*
-![Menambahkan Tugas](images/menambah-tugas.png.png)
+![Menambahkan Tugas](images/menambah-tugas.png)
 
 
 **3. Pencarian tugas**
 *Menunjukkan pencarian tugas.*
-![Tugas Selesai](images/pencarian-tugas.png.png)
+![Tugas Selesai](images/pencarian-tugas.png)
 
 
 **4. Tugas Selesai Ditandai**
 *Menunjukkan beberapa tugas yang sudah ditandai sebagai selesai.*
-![Tugas Selesai](images/menandai-tugas-selesai.png.png)
+![Tugas Selesai](images/menandai-tugas-selesai.png)
 
 ---
 
