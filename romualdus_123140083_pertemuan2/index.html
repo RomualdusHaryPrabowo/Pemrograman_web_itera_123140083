@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HypoWislist</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="dashboard">
+      <header>
+        <h1>Halo guys..</h1>
+        <p>Welcome to my personal wishlist dashboard!</p>
+      </header>
+
+      <section class="stats">
+        <!-- Personal Information -->
+        <div class="main">
+          <div class="profile">
+            <a href="#">
+              <img src="pages/profil.jpg" alt="Foto Profil" class="profile-pic" />
+            </a>
+            <h3>Romualdus Hary Prabowo</h3>
+            <p>Web Developer | Tech Enthusiast</p>
+          </div>
+          <ul class="biodata">
+            <h3>Who Am I?</h3>
+            <p>
+              “A highly motivated student passionate about developing responsive and user-friendly web applications. Always eager to learn new technologies and also interested in the field of cybersecurity. Currently working on personal projects and building a portfolio to showcase my work.”
+            </p>
+            <h4>Personal Info:</h4>
+            <li>Age: 20</li>
+            <li>Location: Indonesia</li>
+            <li>Education: Informatics Engineering - Institut Teknologi Sumatera</li>
+            <li>Email: romualdushypo@gmail.com</li>
+            <li>Current Focus: Web Development and Cybersecurity</li>
+          </ul>
+        </div>
+        <!-- Just a transition -> Note -->
+        <div class="note">
+          <h3>Reminder!</h3>
+          <p id="note">“This dashboard was created to remind you of your goals and dreams—helping you stay inspired and motivated every day.”</p>
+        </div>
+      </section>
+      <!-- Dashboard Section -->
+      <section class="dashboard-section">
+    <h2>My Wishlist</h2>
+    <div class="message" id="message"></div>
+
+    <!-- Input Form -->
+    <form id="wishlistForm">
+        <input type="hidden" id="itemId">
+        <input type="text" id="item" placeholder="Wishlist item name" required>
+        <input type="number" id="year" placeholder="Year" required>
+        <button type="submit">Save</button>
+    </form>
+    
+    <!-- Tabel Wishlist -->
+    <table>
+        <thead>
+            <tr>
+                <th>No</th>
+                <th>Item</th>
+                <th>Year</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody id="wishlistTableBody">
+            <!-- Rendering from JavaScript -->
+        </tbody>
+    </table>
+</section>
+
+    <script src="script.js"></script>
+  </body>
+</html>
