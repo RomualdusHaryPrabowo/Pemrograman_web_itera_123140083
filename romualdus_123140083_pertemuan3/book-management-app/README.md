@@ -1,7 +1,3 @@
-Berikut versi lengkap README dengan bagian **cara clone repository** ditambahkan di bagian “Instalasi”:
-
----
-
 ````markdown
 # 📚 Aplikasi Manajemen Buku Pribadi
 
