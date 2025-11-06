@@ -1,12 +1,7 @@
 ````markdown
 # 📚 Aplikasi Manajemen Buku Pribadi
 
-![React](https://img.shields.io/badge/React-18.2.0-61DAFB?logo=react&logoColor=white)
-![License](https://img.shields.io/badge/license-MIT-green)
-![Build](https://img.shields.io/badge/build-passing-brightgreen)
-![Status](https://img.shields.io/badge/status-active-success)
-
-Aplikasi web berbasis **React.js** yang memungkinkan pengguna untuk mengelola koleksi buku pribadi mereka.  
+Sebuah aplikasi web berbasis React.js yang memungkinkan pengguna untuk mengelola koleksi buku pribadi mereka.  
 Dengan aplikasi ini, Anda dapat mencatat buku yang **sudah dimiliki**, **sedang dibaca**, atau **ingin dibeli**, serta mengelola data tersebut dengan mudah.
 
 ---
@@ -23,10 +18,6 @@ Pastikan Anda telah menginstal:
 ### ⚙️ Instalasi
 
 1. **Clone repositori ini**
-   ```bash
-   git clone https://github.com/username/book-management-app.git
-````
-
 2. **Masuk ke direktori proyek**
 
    ```bash
@@ -73,14 +64,11 @@ Tekan `q` untuk keluar dari mode watch.
 ## 📸 Screenshots Antarmuka
 >
 > ```markdown
-> ### 🏠 Halaman Beranda
-> ![Halaman Beranda](./screenshots/homepage.png)
+> ![](./src/images/Screenshot1.png)
 >
-> ### ➕ Form Tambah/Edit Buku
-> ![Form Tambah/Edit Buku](./screenshots/form.png)
+> ![](./src/images/Screenshot2.png)
 >
-> ### 📊 Halaman Statistik
-> ![Halaman Statistik](./screenshots/stats.png)
+> ![](./src/images/Screenshot3.png)
 > ```
 
 ---
@@ -140,7 +128,7 @@ Navigasi dilakukan dengan mulus tanpa reload halaman.
 
 ## 🧪 Laporan Testing
 
-Aplikasi telah diuji menggunakan **React Testing Library** dan **Jest** untuk memastikan semua fungsionalitas berjalan dengan benar.
+Aplikasi telah diuji menggunakan **React Testing Library** dan **Jest**
 
 ### Test mencakup:
 
@@ -149,6 +137,15 @@ Aplikasi telah diuji menggunakan **React Testing Library** dan **Jest** untuk me
 * Penghapusan buku
 * Filter berdasarkan status buku
 * Pencarian buku
+
+### Hasil uji:
+> ```markdown
+> ![](./src/images/Screenshot4.png)
+>
+> ![](./src/images/Screenshot5.png)
+>
+> ![](./src/images/Screenshot6.png)
+> ```
 
 ---
 
@@ -169,21 +166,4 @@ Proyek ini bersifat **open-source** — Anda bebas mengembangkan, memodifikasi, 
 
 ---
 
-### ✨ Kontributor
 
-| Nama                                     | Peran            |
-| ---------------------------------------- | ---------------- |
-| [Nama Anda](https://github.com/username) | Pengembang utama |
-
----
-
-### 💬 Kontak
-
-Jika Anda memiliki pertanyaan atau saran, jangan ragu untuk menghubungi melalui:
-📧 **[email@example.com](mailto:email@example.com)**
-atau kunjungi profil GitHub Anda: [@username](https://github.com/username)
-
-```
-
----
-```
