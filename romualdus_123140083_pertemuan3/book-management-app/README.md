@@ -19,13 +19,17 @@ Pastikan Anda telah menginstal:
 1. **Clone repositori ini**
 
    ```bash
-   git clone https://github.com/username/book-management-app.git
+   git clone https://github.com/RomualdusHaryPrabowo/Pemrograman_web_itera_123140083.git
    ```
 
    Setelah proses clone selesai, buka folder proyek dengan perintah:
 
+  ```bash
+   cd Pemrograman_web_itera_123140083
+   ```
+
    ```bash
-   cd book-management-app
+   cd romualdus_123140083_pertemuan3/book-management-app
    ```
 
 2. **Instal semua dependensi**
