@@ -1,7 +1,11 @@
+Berikut versi lengkap README dengan bagian **cara clone repository** ditambahkan di bagian “Instalasi”:
+
+---
+
 ````markdown
 # 📚 Aplikasi Manajemen Buku Pribadi
 
-Sebuah aplikasi web berbasis React.js yang memungkinkan pengguna untuk mengelola koleksi buku pribadi mereka.  
+Sebuah aplikasi web berbasis **React.js** yang memungkinkan pengguna untuk mengelola koleksi buku pribadi mereka.  
 Dengan aplikasi ini, Anda dapat mencatat buku yang **sudah dimiliki**, **sedang dibaca**, atau **ingin dibeli**, serta mengelola data tersebut dengan mudah.
 
 ---
@@ -18,13 +22,16 @@ Pastikan Anda telah menginstal:
 ### ⚙️ Instalasi
 
 1. **Clone repositori ini**
-2. **Masuk ke direktori proyek**
 
-   ```bash
-   cd book-management-app
-   ```
+Setelah proses clone selesai, buka folder proyek dengan perintah:
 
-3. **Instal semua dependensi**
+```bash
+cd book-management-app
+```
+
+2. **Instal semua dependensi**
+
+   Jalankan perintah berikut untuk mengunduh semua package yang diperlukan:
 
    ```bash
    npm install
@@ -62,14 +69,14 @@ Tekan `q` untuk keluar dari mode watch.
 ---
 
 ## 📸 Screenshots Antarmuka
->
-> ```markdown
-> ![](./src/images/Screenshot1.png)
->
-> ![](./src/images/Screenshot2.png)
->
-> ![](./src/images/Screenshot3.png)
-> ```
+
+```markdown
+![](./src/images/Screenshot1.png)
+
+![](./src/images/Screenshot2.png)
+
+![](./src/images/Screenshot3.png)
+```
 
 ---
 
@@ -125,10 +132,9 @@ Navigasi dilakukan dengan mulus tanpa reload halaman.
 
 ---
 
-
 ## 🧪 Laporan Testing
 
-Aplikasi telah diuji menggunakan **React Testing Library** dan **Jest**
+Aplikasi telah diuji menggunakan **React Testing Library** dan **Jest**.
 
 ### Test mencakup:
 
@@ -139,13 +145,14 @@ Aplikasi telah diuji menggunakan **React Testing Library** dan **Jest**
 * Pencarian buku
 
 ### Hasil uji:
-> ```markdown
-> ![](./src/images/Screenshot4.png)
->
-> ![](./src/images/Screenshot5.png)
->
-> ![](./src/images/Screenshot6.png)
-> ```
+
+```markdown
+![](./src/images/Screenshot4.png)
+
+![](./src/images/Screenshot5.png)
+
+![](./src/images/Screenshot6.png)
+```
 
 ---
 
@@ -166,4 +173,8 @@ Proyek ini bersifat **open-source** — Anda bebas mengembangkan, memodifikasi, 
 
 ---
 
+```
 
+---
+
+```
