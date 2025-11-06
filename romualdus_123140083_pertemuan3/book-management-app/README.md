@@ -1,4 +1,3 @@
-````markdown
 # 📚 Aplikasi Manajemen Buku Pribadi
 
 Sebuah aplikasi web berbasis **React.js** yang memungkinkan pengguna untuk mengelola koleksi buku pribadi mereka.  
@@ -19,11 +18,15 @@ Pastikan Anda telah menginstal:
 
 1. **Clone repositori ini**
 
-Setelah proses clone selesai, buka folder proyek dengan perintah:
+   ```bash
+   git clone https://github.com/username/book-management-app.git
+   ```
 
-```bash
-cd book-management-app
-```
+   Setelah proses clone selesai, buka folder proyek dengan perintah:
+
+   ```bash
+   cd book-management-app
+   ```
 
 2. **Instal semua dependensi**
 
@@ -45,9 +48,7 @@ npm start
 
 Aplikasi akan terbuka otomatis di browser Anda pada alamat:
 
-```
-http://localhost:3000
-```
+👉 **http://localhost:3000**
 
 ---
 
@@ -59,20 +60,18 @@ Gunakan perintah berikut untuk menjalankan unit test:
 npm test
 ```
 
-Perintah ini akan menjalankan test dalam mode **watch**, yang berarti test akan dijalankan ulang setiap kali ada perubahan pada file.
+Perintah ini akan menjalankan test dalam mode **watch**, yang berarti test akan dijalankan ulang setiap kali ada perubahan pada file.  
 Tekan `q` untuk keluar dari mode watch.
 
 ---
 
 ## 📸 Screenshots Antarmuka
 
-```markdown
-![](./src/images/Screenshot1.png)
+Berikut beberapa tampilan antarmuka aplikasi:
 
-![](./src/images/Screenshot2.png)
-
-![](./src/images/Screenshot3.png)
-```
+![Tampilan 1](./src/images/Screenshot1.png)
+![Tampilan 2](./src/images/Screenshot2.png)
+![Tampilan 3](./src/images/Screenshot3.png)
 
 ---
 
@@ -82,25 +81,22 @@ Aplikasi ini dibangun menggunakan fitur-fitur modern React:
 
 ### 🔹 Functional Components & Hooks
 
-Seluruh komponen dibuat menggunakan **fungsi JavaScript (functional components)** yang ringkas dan mudah dipelihara.
+Seluruh komponen dibuat menggunakan **fungsi JavaScript (functional components)** yang ringkas dan mudah dipelihara.  
 State dan lifecycle dikelola dengan **React Hooks**.
 
 #### Hooks yang digunakan:
-
-* **useState** → Mengelola state lokal dalam komponen (form input, filter, mode edit).
-* **useEffect** → Menangani side-effect seperti memperbarui state ketika prop berubah.
-* **useMemo** → Mengoptimalkan performa dengan menyimpan hasil perhitungan (memoization).
+- **useState** → Mengelola state lokal dalam komponen (form input, filter, mode edit).
+- **useEffect** → Menangani side-effect seperti memperbarui state ketika prop berubah.
+- **useMemo** → Mengoptimalkan performa dengan menyimpan hasil perhitungan (memoization).
 
 ---
 
 ### 🧰 Custom Hooks
 
 #### `useLocalStorage.js`
-
 Menyimpan dan mengambil data dari `localStorage` agar data pengguna **tidak hilang saat refresh**.
 
 #### `useBookStats.js`
-
 Menghitung statistik buku (total, dimiliki, dibaca, ingin dibeli) dari daftar buku.
 
 ---
@@ -109,9 +105,9 @@ Menghitung statistik buku (total, dimiliki, dibaca, ingin dibeli) dari daftar bu
 
 Mengelola **state global** daftar buku dan fungsi manipulasi data:
 
-* `addBook()`
-* `editBook()`
-* `deleteBook()`
+- `addBook()`
+- `editBook()`
+- `deleteBook()`
 
 Semua state ini dapat diakses oleh komponen mana pun tanpa harus mengoper props berulang-ulang (prop drilling).
 
@@ -121,8 +117,8 @@ Semua state ini dapat diakses oleh komponen mana pun tanpa harus mengoper props 
 
 Digunakan untuk navigasi multi-halaman (**Single Page Application**):
 
-* `/` → Halaman **Beranda**
-* `/stats` → Halaman **Statistik**
+- `/` → Halaman **Beranda**
+- `/stats` → Halaman **Statistik**
 
 Navigasi dilakukan dengan mulus tanpa reload halaman.
 
@@ -133,33 +129,27 @@ Navigasi dilakukan dengan mulus tanpa reload halaman.
 Aplikasi telah diuji menggunakan **React Testing Library** dan **Jest**.
 
 ### Test mencakup:
-
-* Render komponen halaman utama
-* Penambahan buku baru
-* Penghapusan buku
-* Filter berdasarkan status buku
-* Pencarian buku
+- Render komponen halaman utama  
+- Penambahan buku baru  
+- Penghapusan buku  
+- Filter berdasarkan status buku  
+- Pencarian buku  
 
 ### Hasil uji:
-
-```markdown
-![](./src/images/Screenshot4.png)
-
-![](./src/images/Screenshot5.png)
-
-![](./src/images/Screenshot6.png)
-```
+![Testing 1](./src/images/Screenshot4.png)
+![Testing 2](./src/images/Screenshot5.png)
+![Testing 3](./src/images/Screenshot6.png)
 
 ---
 
 ## 🧑‍💻 Teknologi yang Digunakan
 
-* React.js
-* React Router
-* Context API
-* Custom Hooks
-* LocalStorage
-* Jest & React Testing Library
+- React.js  
+- React Router  
+- Context API  
+- Custom Hooks  
+- LocalStorage  
+- Jest & React Testing Library  
 
 ---
 
@@ -168,9 +158,3 @@ Aplikasi telah diuji menggunakan **React Testing Library** dan **Jest**.
 Proyek ini bersifat **open-source** — Anda bebas mengembangkan, memodifikasi, dan menggunakan kode ini sesuai kebutuhan.
 
 ---
-
-```
-
----
-
-```
