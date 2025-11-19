@@ -106,10 +106,83 @@ Output: Berhasil meminjam: Belajar Pemrograman
 ## Konsep Teknis
 
 ### Encapsulation
-Private methods seperti `__find_by_id()` di Library class tidak dapat diakses dari luar, memastikan data integrity.
+1. Encapsulation
+
+Program menggunakan encapsulation untuk melindungi atribut dan menjaga integritas data.
+
+Private attribute (__) pada BaseItem:
+
+__code → ID item
+
+__name → nama/judul item
+Atribut ini tidak dapat diakses langsung dari luar kelas.
+
+Protected attribute (_) seperti:
+
+_release_year
+
+_available
+
+_borrow_time
+Atribut ini hanya boleh digunakan oleh subclass (Book, Magazine) atau internal class.
+
+Contoh dari kode:
+self.__code = code
+self._available = True
+
+Pada Library, pencarian item disembunyikan menggunakan method internal:
+def _find(self, code):
+    ...
+Method _find() tidak dimaksudkan diakses langsung dari luar class, sehingga mendukung konsep encapsulation.
 
 ### Inheritance
-Book dan Magazine mewarisi semua atribut dan method dari LibraryItem, menambahkan atribut spesifik mereka sendiri.
+Kelas Book dan Magazine mewarisi semua atribut dan method dari BaseItem.
+
+Contohnya:
+class Book(BaseItem):
+    def __init__(...):
+        super().__init__(code, name, year)
+Kedua subclass menambahkan atribut spesifik:
+
+Book
+
+_writer
+
+_isbn
+
+Magazine
+
+_publisher
+
+_edition
+
+Semua method dasar seperti borrow(), return_item(), info(), dan category() di-override untuk menyesuaikan jenis item.
 
 ### Polymorphism
-Setiap subclass mengimplementasikan `display_info()` dengan cara yang berbeda sesuai kebutuhan.
+Polimorfisme diterapkan melalui:
+
+a. Override method info()
+
+Setiap subclass menampilkan informasi dengan format berbeda:
+
+Book.info() menampilkan judul, penulis, ISBN, dan status.
+
+Magazine.info() menampilkan judul, penerbit, edisi, dan status.
+
+b. Override __str__()
+
+Setiap item punya representasi string berbeda meskipun dipanggil dengan cara yang sama:
+print(item)  # otomatis memanggil __str__()
+c. Polimorfisme pada Library
+
+Kelas Library tidak peduli apakah objek adalah Book atau Magazine, asalkan memiliki method:
+
+category()
+
+is_available
+
+title
+
+item_code
+
+Ini merupakan bentuk duck typing, karena objek dianggap valid jika memiliki method yang dibutuhkan, bukan berdasarkan tipenya.
